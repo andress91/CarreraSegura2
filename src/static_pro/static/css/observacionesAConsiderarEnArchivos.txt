@@ -1,0 +1,4 @@
+El archivo bootstrap.css no es de Academia
+El archivo bootstrap.min.css si es de academia
+
+El problema es que se necesita del bootstrap.css, pero este altera al bootstrap.min.css

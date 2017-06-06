@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block head_title %}Bienvenidos | {% endblock %}
+{% block jumbotron %}
+      <div class="jumbotron">
+
+      
+<div class='row'> 
+  <div class='col-sm-6'>
+        <h1>Bienvenidos!!</h1>
+        <p>En esta pagina encontraras la información de boca y mano de los mismos alumnos.</p>
+        <p>No dejes que decidan por ti, informate.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="index2.html" role="button">Investiga &raquo;</a>
+        </p>
+  </div>
+<div class='col-sm-6'><iframe width="560" height="310" src="https://www.youtube.com/embed/crE2KHrAaOk" frameborder="0"></iframe></div>
+</div>
+</div>
+{% endblock %}
+{{titulo}}
+<hr/>
+<br/>
+{% block content %}
+<div class="row">
+  <div class="col-sm-3 col-xs-12 pull-right">
+    {% if not user.is_authenticated %}
+    <p class='lead text-align-center'>Subscribirte</p>
+    <form method="POST" action="">{% csrf_token %}
+    {{ el_form|crispy }}
+    <input class='btn btn-primary' type='submit' value='Confirmar' />
+    </form>
+    {% else %}
+    <p class='lead text-align-center'>{{ titulo }}<br/><br/><span class="fa-stack fa-4x">
+  <i class="fa fa-circle-thin fa-stack-2x"  style="color:#47b78c;"></i>
+  <i class="fa fa-hand-peace-o fa-stack-1x"></i>
+</span></p>
+    {% endif %}
+  </div>
+<div class='col-sm-3'>
+  <p class='lead text-align-center'>Siguenos en<br/><br/><span class="fa-stack fa-5x">
+  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+  </p>
+</div>
+<div class='col-sm-3'>
+  <p class='lead text-align-center'>Ve nuestros videos en<br/><br/><span class="fa-stack fa-5x">
+  <i class="fa fa-youtube-square" aria-hidden="true"></i></p>
+</div>
+
+</span></i></p>
+</div>
+</div>
+
+
+
+<hr/>
+{% endblock %}

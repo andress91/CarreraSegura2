@@ -1,0 +1,760 @@
+
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Inicio || CarreraSegura</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <!-- CSS del template Network --
+		= Deben estar acá al principio porque estos archivos producen que los demás entren
+        en conflicto. Aún con los enlaces en esta posición, hay un conflicto con la sección de redes
+        sociales, pues éstas se ven un poco más pequeñas y corridas a la izquierda. Sin embargo, es un
+        detalle menor que se puede corregir en un futuro.
+     ============================ -->
+		<!--     {% include "head_css.html" %} -->
+        <link rel="stylesheet" href="{% static 'css/estilos.css">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css">
+
+    <!-- Hasta acá llega la intromisión del template Network -->
+        
+    <!-- Todos los archivos de enlace que siguen pertenecen al template academia -->	
+        
+		<!-- favicon
+		============================================ -->		
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico">		
+		<!-- Google Fonts
+		============================================ -->		
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href="http://allfont.net/allfont.css?fonts=montserrat-light" rel="stylesheet" type="text/css" />
+		<!--linearicons font-->
+		<link rel="stylesheet" href="{% static 'css/linearfont.css' %">
+		<!-- Bootstrap CSS
+		============================================ -->		
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %">
+		<!-- meanmenu CSS
+		============================================ -->		
+        <link rel="stylesheet" href="{% static 'css/meanmenu.min.css' %">
+		<!-- Bootstrap CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %">
+		<!-- owl.carousel CSS
+		============================================ -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.css' %">
+        <link rel="stylesheet" href="{% static 'css/owl.transitions.css' %">
+		<!-- animate CSS
+		============================================ -->
+        <link rel="stylesheet" href="% static 'css/animate.css' %">
+		<!-- normalize CSS
+		============================================ -->
+        <link rel="stylesheet" href="% static 'css/normalize.css' %">
+		<!-- Nivo Slider CSS -->
+		<link rel="stylesheet" href="% static 'css/nivo-slider.css' %">
+		<!-- Add venobox css -->
+		<link rel="stylesheet" href="% static 'venobox/venobox.css' %"> 
+		<!-- main CSS
+		============================================ -->
+        <link rel="stylesheet" href="% static 'css/main.css' %">
+		<!-- Nivo Slider CSS -->
+		<link rel="stylesheet" href="% static 'css/nivo-slider.css' %">		
+		<!-- style CSS
+		============================================ -->
+        <link rel="stylesheet" href="% static 'style.css' %">
+		<!-- responsive CSS
+		============================================ -->
+        <link rel="stylesheet" href="% static 'css/responsive.css' %">
+		<!-- modernizr JS
+		============================================ -->		
+        <script src="% static 'js/vendor/modernizr-2.8.3.min.js' %"></script>
+        
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+	<!--start header  area --> 
+	<div class="header_area">
+		<div class="container">
+			<div class="row">
+				<!-- header  logo --> 
+				<div class="col-md-4 col-sm-3 col-xs-12">
+					<div class="logo"><a href="index.html"><img src="img/logo1.png" alt="" /></a></div>
+				</div>
+				<!-- end header  logo --> 
+				<div class="col-md-8 col-sm-9 col-xs-12">
+					<div>
+						<div class="form pull-right">
+							<div class="language">
+								  <select class="form-lan">
+								    <option value="english" selected>Español</option> <!-- Cambiamos lo que diga english por español --> 
+								    <option value="english">Inglés</option>
+								  </select>
+							</div>
+						</div>
+						<div class="social_icon pull-right">
+							<p>
+							   <a target="_blank" href="#" class="icon-set"><i class="fa fa-facebook"></i></a> 
+							   <a target="_blank" href="#" class="icon-set"><i class="fa fa-twitter"></i></a> 
+							   <a target="_blank" href="#" class="icon-set"><i class="fa fa-linkedin"></i></a>
+							</p>
+						</div>				
+					</div>
+					<div class="phone_address pull-right clear">
+						<p class="no-margin">
+						  <small>
+							  <span class="text-msg">¿Tienes Alguna Pregunta?</span>
+							  <span class="icon-set"><i class="fa fa-phone"></i> +880 1973 833 508</span> 
+							  <span class="icon-set"><i class="fa fa-envelope"></i> admin@carrerasegura.com</span> 
+						  </small>
+						</p>				
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!--end header  area --> 
+    
+    <!--Start mobile menu  area -->
+	<div class="mobile_memu_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="mobile_memu">
+					<!--  nav menu-->
+					<nav>
+						<ul class="navid">
+							<li><a href="index.html">Inicio </a></li>
+							<li><a href="courses-item-1.html">Busqueda</a>
+								<ul>
+									<li><a href="courses-item-1.html">Carreras</a></li>
+									<li><a href="courses-item-2.html">Instituciones</a></li>
+								</ul>							
+							</li>
+							<li><a href="#">Financiar</a>
+								<ul>
+									<li><a href="faq.html">¿Qué son las becas y créditos? </a></li>
+									<li><a href="login.html">¿Se puede estudiar gratis?  </a></li>
+									<li><a href="gellary.html">¿Cómo me financio en otra región? </a></li>
+									<li><a href="about-page.html">Requisitos para mantener una beca </a></li>
+								</ul>							
+							</li>						
+							<li><a href="store.html">¿Qué escoger?</a></li>							
+							<li><a href="about-page.html">¿Quienes Somos?</a></li>
+							<li><a href="login.html">Ingresar</a></li>
+							
+						</ul>
+					</nav>
+					<!--end  nav menu-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end mobile menu  area --> 	
+    
+    <div class="slide_wrap_area">
+    <!--Start nav  area --> 
+	<div class="nav_area">
+		<div class="container">
+			<div class="row">
+				<!--nav item-->
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<!--  nav menu-->
+					<nav class="menu">
+						<ul class="navid pull-left">
+							<li><a href="index.html">Inicio </a></li>
+							<li><a href="courses-item-1.html">Busqueda <i class="fa fa-angle-down"></i></a>
+								<ul>
+									<li><a href="courses-item-1.html">Carreras</a></li>
+									<li><a href="courses-item-2.html">Instituciones</a></li>
+								</ul>							
+							</li>
+							<li><a href="#">Financiar <i class="fa fa-angle-down"></i></a>
+								<ul>
+									<li><a href="faq.html">¿Qué son las becas y créditos? </a></li>
+									<li><a href="login.html">¿Se puede estudiar gratis?  </a></li>
+									<li><a href="gellary.html">¿Cómo me financio en otra región? </a></li>
+									<li><a href="about-page.html">Requisitos para mantener una beca </a></li>
+								</ul>							
+							</li>						
+							<li><a href="store.html">¿Qué escoger?</a></li>							
+							<li><a href="about-page.html">¿Quienes Somos?</a></li>
+							<li><a href="login.html">Ingresar</a></li>
+							
+						</ul>
+					</nav>
+					<!--end  nav menu-->	
+					<div class="search pull-right">
+						<div class="search-box">
+							<input type="text" class="form_control" placeholder="search" />
+							<span class="search-open"><i class="fa fa-search search"></i><i class="fa fa-close hidden close"></i></span>
+						</div>
+					</div>
+				</div>
+				<!--end nav item -->
+			</div>	
+		</div>
+	
+	</div>
+	<!--end nav  area -->
+	<!-- HOME SLIDER -->
+	<div class="slider-wrap home-1-slider" id="home">
+		<div id="mainSlider" class="nivoSlider slider-image">
+			<img src="img/home1/s1.jpg" alt="main slider" title="#htmlcaption1"/>
+			<img src="img/home1/s2.jpg" alt="main slider" title="#htmlcaption2"/>
+		</div>
+		<div id="htmlcaption1" class="nivo-html-caption slider-caption-1">
+			<div class="slider-progress"></div>	
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">						
+						<div class="slide1-text slide-text">
+							<div class="middle-text">
+								<div class="left_sidet1">
+									<div class="cap-title wow slideInRight" data-wow-duration=".9s" data-wow-delay="0s">
+										<h1>Abriendo las fronteras de la <br />educación </h1>
+									</div>
+									<div class="cap-dec wow slideInRight" data-wow-duration="1s" data-wow-delay=".5s">
+										<h2>Todo lo que quisiste saber de las carreras universitarias, técnicas y profesionales en un sólo lugar.	</h2>
+									</div>	
+									<div class="cap-readmore animated fadeInUpBig" data-wow-duration="2s" data-wow-delay=".5s">
+										<a href="#" >Ingresar</a>
+									</div>
+								</div>				
+							</div>	
+						</div>		
+					</div>
+				</div>
+			</div>					
+		</div>	
+		<div id="htmlcaption2" class="nivo-html-caption slider-caption-2">
+			<div class="slider-progress"></div>	
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">						
+						<div class="slide1-text slide-text">
+							<div class="middle-text">
+								<div class="left_sidet1">
+									<div class="cap-title wow slideInRight" data-wow-duration=".9s" data-wow-delay="0s">
+										<h1>Hazte premium ahora y recibe contenido exclusivo de <br />carreras e instituciones</h1>
+									</div>
+									<div class="cap-dec wow slideInRight" data-wow-duration="1.1s" data-wow-delay="0s">
+										<h2>Toma tu decisión con la mayor seguridad posible.</h2>
+									</div>	
+									<div class="cap-readmore animated fadeInUpBig" data-wow-duration="1.5s" data-wow-delay=".5s">
+										<a href="#" >Ingresar</a>
+									</div>
+								</div>				
+							</div>	
+						</div>		
+					</div>
+				</div>
+			</div>					
+		</div>
+	</div>
+	<!-- HOME SLIDER -->
+	</div>
+    
+    
+    <!--Start about  area --> 
+	<div class="about_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="content-inner">
+						<h3 class="module-title">
+							Bienvenido a  <span> Carrera<br>Segura</span>
+						</h3>
+						<div class="content-desc">
+							<div class="">
+								<p class="lead">¿Qué hacer con tu futuro?</p>
+							</div>
+
+							<div class="about_texts">
+								<p>CarreraSegura es el lugar en donde finalmente podrás encontrar la respuesta de una de las decisiones más importantes de tu vida: Qué hacer con tu futuro.</p>
+								
+								<p>Ponemos a tu alcance una serie de increible información que, por si fuera poco, adaptamos a tus necesidades como nunca se ha visto. Todo gracias al arduo trabajo de diversos estudiantes que decidieron crear una herramienta la cual sea considerada una verdadera ayuda en la elección del futuro que siempre soñaste. </p>
+								
+								<p>¿Te parece demasiado para ser cierto? Mira nuestro video de presentación y enterate como dos minutos pueden cambiarte la vida.</p>
+								
+								
+									
+							</div>
+						  </div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="video-wrapper pull-right">
+						<a class="venobox_custom mfp-iframe vidwrap" data-type="iframe" href="https://www.youtube.com/embed/B7r7YY_EO0A?showinfo=0"></a>
+					  </div>				
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end about  area -->	
+	<!--start service  area -->
+	<div class="service_area">
+		<div class="container">
+			<div class="row">
+				<!-- service single item --> 
+				<div class="col-md-3 col-sm-6 col-lg-3">
+					<div class="service_item">
+						<span class="lnr lnr-film-play"></span>
+						<h2>Cientos de videos sobre carreras e instituciones</h2>
+						<p>Enterate en detalle de sus características</p>
+					</div>
+				</div>
+				<!-- end service single item -->
+				<!-- service single item --> 
+				<div class="col-md-3 col-sm-6 col-lg-3">
+					<div class="service_item">
+						<span class="lnr lnr-camera-video "></span>
+						<h2>Cada video elaborado cuiadadosamente</h2>
+						<p>Diseñados para ser breves y directos </p>
+					</div>
+				</div>
+				<!-- end service single item --> 
+				<!-- service single item --> 
+				<div class="col-md-3 col-sm-6 col-lg-3">
+					<div class="service_item">						
+						<span class="lnr lnr-book"></span>
+						<h2>Información exclusiva y directa en un sólo lugar</h2>
+						<p>Miles de documentos y noticias para responder tus preguntas</p>
+					</div>
+				</div>
+				<!-- end service single item --> 
+				<!-- service single item --> 
+				<div class="col-md-3 col-sm-6 col-lg-3">
+					<div class="service_item">
+						<span class="lnr lnr-magic-wand"></span>
+						<h2>Todo lo que quisiste saber y más </h2>
+						<p>Toma una decisión con convicción y sabiduría</p>
+					</div>
+				</div>
+				<!-- end service single item --> 				
+			</div>
+		
+		</div>
+	</div>	
+	<!--End service  area -->
+	
+	<section class="tu-mejor-eleccion p-y-1">
+        <div class="container">
+
+            <h2 class="h3 text-xs-center font-weight-bold">¿Por qué somos <span>tu mejor elección?</span></h2>
+            <p class="text-xs-center">
+                Información exclusiva en la plama de tu mano
+            </p>
+
+            <div class="row">
+                <ul class="col-xs-6 col-lg-4 text-xs-center text-lg-left">
+                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".3s">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+
+                        <div class="contenedor-eleccion">
+                            <h4>Carreras por institución</h4>
+                            <p class="hidden-md-down">Cada carrera es diferente en cada institución. Acá te mostraremos las diferencias.</p>
+                        </div>
+                    </li>
+                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".7s">
+                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion">
+                            <h4>Información precisa</h4>
+                            <p class="hidden-md-down">¿Para qué explicar en un día lo que se podría explicar en 5 minutos?.</p>
+                        </div>
+                    </li>
+                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay="1.1s">
+
+                        <i class="fa  fa-comment-o" aria-hidden="true"></i>
+
+                        <div class="contenedor-eleccion">
+                            <h4>Atención a tus necesidades</h4>
+                            <p class="hidden-md-down">Te mostraremos de manera práctica cada tópico que te interese según tus gustos. </p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="hidden-md-down col-lg-4">
+                    <img src="img/mundo.svg" alt="Mundo movil">
+                </div>
+
+                <ul class="col-xs-6 col-lg-4 text-xs-center text-lg-right">
+                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".5s">
+                        <i class="fa  fa-calendar" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion">
+                            <h4>Explicación por estudiantes</h4>
+                            <p class="hidden-md-down">¿Quien mejor para explicar de qué trata una carrera que un estudiante que ha pasado años en ella?</p>
+                        </div>
+                    </li>
+                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay=".9s">
+                        <i class="fa  fa-check-square-o" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion">
+                            <h4>Personalizar contenido</h4>
+                            <p class="hidden-md-down">Te acompañaremos en el paso a paso en el descubrimiento de tus gustos y carreras de interés.</p>
+                        </div>
+                    </li>
+                    <li class="wow zoomIn" data-wow-duration=".3s" data-wow-delay="1.3s">
+                        <i class="fa  fa-cogs" aria-hidden="true"></i>
+                        <div class="contenedor-eleccion">
+                            <h4>Resumenes de asignaturas</h4>
+                            <p class="hidden-md-down">Acá te enterarás de manera practica y audiovisual con qué asignaturas te enfrentarás en cada carrera.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <main class="servicios p-y-1">
+        <div class="container">
+            <h2 class="text-xs-center font-weight-bold" style="color:white">¿Haz tenido alguno de estos problemas?</h2>
+
+
+            <div class="row">
+                <article class="col-md-4 wow bounceInLeft" data-wow-delay=".3s">
+                    <img src="img/servicio-1.svg" alt="Servicio Desarrollo de Aplicaciones Mobiles">
+                    <h3><a href="#"> No sabes qué te gusta realmente </a></h3>
+                    <p class="hidden-sm-down"> Si estás cansado de que los test de orientación vocacional sólo sean capaces de ayudarte a entender qué no sabes lo que quieres, nosotros nos encargaremos de darte la ayuda que siempre esperaste.</p>
+                    <a href="#" class="btn btn-secondary hidden-sm-down">Más información</a>
+
+                </article>
+
+                <article class="col-md-4 wow bounceInUp" data-wow-delay=".6s">
+                    <img src="img/servicio-2.svg" alt="Servicio Consultoría Tecnológica">
+                    <h3><a href="#">No conoces las carreras más allá del nombre</a></h3>
+                    <p class="hidden-sm-down">Si siempre te ha intrigado una carrera pero tienes miedo de tomar una mala decisión y perder años de tu vida, nosotros te ayudaremos a tomar la decisión correcta. </p>
+                    <a href="#" class="btn btn-secondary hidden-sm-down">Más información</a>
+                </article>
+
+                <article class="col-md-4 wow bounceInRight" data-wow-delay="1s">
+                    <img src="img/servicio-3.svg" alt="Servicio Marketing y publicidad Movil">
+                    <h3><a href="#">No sabes qué posibilidades tienes de estudiar</a></h3>
+                    <p class="hidden-sm-down">Muchos son los motivos por lo que una persona no se atreva a elegir el futuro que sueña. El principal siempre es "La oportunidad y el dinero". Acá te enseñaremos todas las posibilidades que tienes y de las cuales no te percatas.</p>
+                    <a href="#" class="btn btn-secondary hidden-sm-down">Más información</a>
+                </article>
+
+            </div>
+        </div>
+    </main>
+	
+	
+	<!--start news  area -->	
+	<div class="news_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title">
+						<h3 class="module-title">
+							 Últimas  <span>Noticias</span>
+						</h3>
+					</div>
+				</div>
+			</div>		
+			<div class="row">
+				<!--start single news  item -->	
+				<div class="col-md-6 col-sm-12">
+					<div class="single_news_item">
+						<div class="news_thumb">
+						<a href="#"><img src="img/home1/news/1.jpg" alt="" /></a>	
+						</div>
+						<div class="news_content">
+							<p class="date">8 de Julio de 2017</p>
+							<h2><a href="single-blog.html">CarreraSegura gana fondos CORFO y se hace una realidad </a></h2>
+							<p>Aliquam pellentesque velit et augue viverra dapibus. Cras tempus ultrices iaculis. Fusce feugiat augue viverra dapibus. Cras tempus ultrices iaculis. Fusce feugiataugue viverra dapibus. Cras tempus ultrices iaculis. Fusce feugia velit et augue viverra dapibus. Cras tempus ultrices iaculis. Fusce feugiat augue viverra dapibus. Cras ... </p>
+							<a href="" class="read_more">Leer más...</a>
+						</div>
+					</div>
+				
+				</div>
+				<!--end single news  item -->	
+				<div class="col-md-6">
+					<div class="row">
+					<!--start single news  item -->	
+					<div class="col-md-6 col-sm-6">
+						<div class="single_news_item">
+							<div class="news_thumb">
+							<a href="#"><img src="img/home1/news/2.jpg" alt="" /></a>	
+							</div>
+							<div class="news_content">
+								<p class="date">1 Julio 2017</p>
+								<h2><a href="single-blog.html">CarreraSegura pasa a última fase de la competencia</a></h2>
+							</div>
+						</div>						
+					</div>
+					<!--end single news  item -->	
+					<!--start single news  item -->	
+					<div class="col-md-6 col-sm-6">
+						<div class="single_news_item">
+							<div class="news_thumb">
+							<a href="#"><img src="img/home1/news/3.jpg" alt="" /></a>	
+							</div>
+							<div class="news_content">
+								<p class="date">25 Junio 2017</p>
+								<h2><a href="single-blog.html">Nuevo equipo de marketing de CarreraSegura</a></h2>
+							</div>
+						</div>				
+					</div>
+					<!--end single news  item -->
+					<!--start single news  item -->	
+					<div class="col-md-6 col-sm-6">
+						<div class="single_news_item">
+							<div class="news_thumb">
+							<a href="#"><img src="img/home1/news/4.jpg" alt="" /></a>	
+							</div>
+							<div class="news_content">
+								<p class="date">20 Junio 2017</p>
+								<h2><a href="single-blog.html">Nuevos acuerdos entre instituciones y CleverChance </a></h2>
+							</div>
+						</div>						
+					</div>
+					<!--end single news  item -->	
+					<!--start single news  item -->	
+					<div class="col-md-6 col-sm-6">
+						<div class="single_news_item">
+							<div class="news_thumb">
+							<a href="#"><img src="img/home1/news/5.jpg" alt="" /></a>	
+							</div>
+							<div class="news_content">
+								<p class="date">2 Junio 2017</p>
+								<h2><a href="single-blog.html">CleverChance lanza comunicado plan de expansión </a></h2>
+							</div>
+						</div>				
+					</div>
+					<!--end single news  item -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end news  area -->
+	<!--start share  area -->
+	<div class="share_area sharre_top">
+		<div class="container">
+			<div class="row">
+				<div class="share-container">
+					<!-- single item brand -->
+					<div class="col-md-3 col-sm-6 col-lg-3">
+						<div class="share-item">
+							<div class="brand_content content_left_fb">
+								<a href="#">
+									<i class="fa fa-facebook"></i>
+									<div class="icone_text">
+									<p>23424K Seguidores</p>
+									<h5>Síguenos</h5>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end single item brand -->
+					<!-- single item brand -->
+					<div class="col-md-3 col-sm-6 col-lg-3">
+						<div class="share-item">
+							<div class="brand_content content_left_tw">
+								<a href="#">
+									<i class="fa fa-twitter"></i>
+									<div class="icone_text">
+									<p>65433K Seguidores</p>
+									<h5>Síguenos</h5>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end single item brand -->
+					<!-- single item brand -->
+					<div class="col-md-3 col-sm-6 col-lg-3">
+						<div class="share-item">
+							<div class="brand_content content_left_pn">
+								<a href="#">
+									<i class="fa fa-google-plus"></i>
+									<div class="icone_text">
+									<p>45675K Seguidores</p>
+									<h5>Síguenos</h5>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end single item brand -->
+					<!-- single item brand -->
+					<div class="col-md-3 col-sm-6 col-lg-3">
+						<div class="share-item">
+							<div class="brand_content content_left_in">
+								<a href="#">
+									<i class="fa fa-linkedin"></i>
+									<div class="icone_text">
+									<p>78764K Seguidores</p>
+									<h5>Síguenos</h5>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- end single item brand -->				
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--end share  area -->	
+	<!-- footer  area -->	
+	<div class="footer_area">
+		<div class="container">
+			<div class="row">
+				<div class="borderbottom">			
+					<div class="col-md-6 col-sm-12">
+						<div class="footer_top_left">
+							<img src="img/logo-white.png" alt="" />
+							<span>Conocer tu futuro nunca fue tan fácil</span>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="footer_top_right">
+						 <span>144 Presentadores 212 Carreras 2321 Videos explicativos </span>
+						 <a href="Registro.html" class="read_more">Registrarse</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- widget area -->
+			<div class="row">
+				<div class="col-md-6 col-sm-12">
+					<!--single widget item -->
+					<div class="single_widget">
+						<div class="widget_thumb">
+							<img src="img/home1/camp-1.jpg" alt="" />
+						</div>
+						<div class="widget_content">
+							<h2>¿Quieres ser un presentador?</h2>
+							<p>Postula a Presentador en CarreraSegura y se conocido en tu país </p>
+							 <a href="" class="read_more">Me Apunto</a>
+						</div>
+					</div>
+					<!--single widget item -->
+					<div class="single_widget">						
+						<div class="widget_thumb">
+							<img src="img/home1/camp-2.jpg" alt="" />
+						</div>
+						<div class="widget_content">
+							<h2> ¿Tienes opiniones que quieras compartir? </h2>
+							<p> Tu opinión es lo más importante. En CarreraSegura nos encantaría escucharte. </p>
+							 <a href="" class="read_more">Contacto</a>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<!--single widget item -->
+					<div class="single_widget">
+						<div class="widget_content">
+							<h2>Conoce CarreraSegura</h2>
+							<ul>
+							    <li><a href="#">Quienes Somos</a></li>
+								<li><a href="#">Contacto Empresas</a></li>
+								<li><a href="#">Trabaja con Nosotros</a></li>
+								<li><a href="#">Redes Sociales</a></li>
+								
+								
+								
+							</ul>
+						</div>
+					</div>
+					<!--single widget item -->
+					<div class="single_widget">
+						<div class="widget_content">
+							<h2>Ayuda y Soporte</h2>
+							<ul>
+								<li><a href="#">Términos de uso del sitio</a></li>
+								<li><a href="#">Preguntas Frecuentes</a></li>
+								<li><a href="#">Alcance de empresa</a></li>
+								<li><a href="#">Protección de Datos</a></li>
+								
+							</ul>
+						</div>
+					</div>					
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<!--single widget item -->
+					<div class="single_widget">
+						<div class="widget_content">
+							<h2>Unete a nuestra Comunidad</h2>
+							<ul>
+								<li><a href="#">Foro</a></li>
+								<li><a href="#">Blogs</a></li>
+								<li><a href="#">Encuentros</a></li>
+								<li><a href="#">Eventos Institucionales</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--single widget item -->
+					<div class="single_widget">
+						<div class="widget_content">
+							<h2>Suscribete a nuestro Newsletter </h2>
+							<p>Recibe las últimas actualizaciones, noticias, encuestas y ofertas.</p>
+							<div class="inputbox">
+								<input type="text" placeholder="your email here" name="name"/>
+								<button type="submit" class="read_more buttons">Suscribirse  <i class="fa fa-graduation-cap"></i></button>
+							</div>
+						</div>
+					</div>
+					<!--end single widget item -->
+				</div>
+			</div>
+			<!-- end widget area -->
+		</div>
+	</div>
+	<!-- end footer  area -->
+	<!-- footer bottom area -->
+	<div class="footer_bottom_area">
+		<div class="container">
+			<div class="row">
+				<div class=" col-sm-6 col-md-6 col-lg-6">
+					<div class="footer_text">
+						<p>
+							Copyright © 2017 CarreraSegura. Todos los Derechos Reservados.
+						</p>
+					</div>
+				</div>
+				<div class=" col-sm-6 col-md-6 col-lg-6">
+					<p class="text-right">Una empresa de <a href="http://cleverchance.com/">CleverChance</a></p>
+				</div>				
+			</div>
+		</div>	
+	</div>		
+		<!-- jquery
+		============================================ -->		
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+		<!-- bootstrap JS
+		============================================ -->		
+        <script src="js/bootstrap.min.js"></script>
+		<!-- wow JS
+		============================================ -->		
+        <script src="js/wow.min.js"></script>
+		 <!-- Nivo Slider JS -->
+		<script src="js/jquery.nivo.slider.pack.js"></script> 		
+		<!-- meanmenu JS
+		============================================ -->		
+        <script src="js/jquery.meanmenu.min.js"></script>
+		<!-- owl.carousel JS
+		============================================ -->		
+        <script src="js/owl.carousel.min.js"></script>
+		<!-- scrollUp JS
+		============================================ -->		
+        <script src="js/jquery.scrollUp.min.js"></script>
+		<!-- Apple TV Effect -->
+        <script src="js/atvImg-min.js"></script>
+		<!-- Add venobox js -->
+		<script type="text/javascript" src="venobox/venobox.min.js"></script>
+		<!-- plugins JS
+		============================================ -->		
+        <script src="js/plugins.js"></script>
+		<!-- main JS
+		============================================ -->		
+        <script src="js/main.js"></script>
+    </body>
+</html>
